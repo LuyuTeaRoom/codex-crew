@@ -1,5 +1,7 @@
 # codex-crew 0.5.3
 
+English | [简体中文](README.md)
+
 A lightweight Codex collaboration skill. Delegate complete deliverables, reuse the original worker for revisions, and let the primary model inspect actual outputs and continue the authorized task chain.
 
 The current GPT-6 Astra or GPT-6.1 Sol primary session keeps the user's reasoning effort. Bounded work uses GPT-6 Luna/max; necessary independent complex work uses GPT-6.1 Sol/xhigh. Startup evidence and eligibility are maintained in [SKILL.md](SKILL.md). Models and roles are not a mandatory pipeline.
