@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Codex local session/state files
+.codex/sessions/
+.codex/state_*.sqlite
+.codex/state_*.sqlite-journal
+
+# Temporary validation directories
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test artifacts
+.pytest_cache/

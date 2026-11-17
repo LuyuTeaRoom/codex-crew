@@ -1,0 +1,7 @@
+# 仅用于最小合并的项目配置片段；不能覆盖现有 config.toml。
+# 父 Agent 的模型和推理强度由当前会话选择；本模板不设置它们。
+# 不设置审批、沙箱、provider 或全局子代理强度。
+[agents]
+enabled = true
+max_concurrent_threads_per_session = 4
+# 4 是并发上限，不是每项任务必须创建的 Worker 数。

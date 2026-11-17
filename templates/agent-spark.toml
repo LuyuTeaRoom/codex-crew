@@ -1,0 +1,11 @@
+# 可选兼容模板，仅在用户明确选择 Spark 时使用；不属于默认路由或发布门槛。
+name = "codex_spark_worker"
+description = "Optional Spark worker for explicitly requested narrow tasks."
+model = "gpt-5.3-codex-spark"
+model_reasoning_effort = "xhigh"
+model_reasoning_summary = "none"
+developer_instructions = """
+只执行当前明确分配的有限任务，遵守文件责任范围，不覆盖其他执行者的修改。
+不自行委派或 fallback；参数不兼容时返回原始错误，由父 Agent 决定下一步。
+返回 task_id、revision、实际结果和验证证据；历史路径成功不能证明当前调用或任务已完成。
+"""
